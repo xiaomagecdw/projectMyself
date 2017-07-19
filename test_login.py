@@ -24,10 +24,10 @@ class login_page(PublicClass):
 
         driver.find_element_by_link_text(u"登录").click()
         sleep(3)
-        driver.find_element_by_id("TANGRAM__PSP_8__userName").send_keys(u"小马哥xxy")
-        driver.find_element_by_id("TANGRAM__PSP_8__password").send_keys(u"cdw520xxy1314")
+        driver.find_element_by_name("userName").send_keys(u"小马哥xxy")
+        driver.find_element_by_name("password").send_keys(u"cdw520xxy1314")
         sleep(15)
-        driver.find_element_by_id("TANGRAM__PSP_8__submit").click()
+        driver.find_element_by_id("TANGRAM__PSP_10__submit").click()
         sleep(2)
         #driver.close()
 
